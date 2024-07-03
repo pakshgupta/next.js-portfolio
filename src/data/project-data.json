@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "https://smartNavPlus.com",
-      "image": "./images/smartnav.png",
+      "image": "/images/smartnav.png",
       "description":"SmartNavPlus is a travel platform that offers personalized trip planning with real-time safety alerts",
       "link": "https://smartnav-plus.netlify.app/",
       "techStack": ["JavaScript", "React.js", "CSS", "Google Maps API", "Travel Advisor API"],
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "title": "https://nexaShop.com",
-      "image": "./images/nexashop.png",
+      "image": "/images/nexashop.png",
       "description": "Nexashop is an e-commerce platform for shoes offering tailored recommendations and secure, speedy shopping.",
       "link": "https://nexashop.netlify.app/",
       "techStack": ["TypeScript", "React.js", "Express.js", "MongoDB", "FireBase", "Redux", "Stripe"],
@@ -22,7 +22,7 @@
     {
       "id": 3,
       "title": "https://exploreEpic.com",
-      "image": "./images/exploreepic.png",
+      "image": "/images/exploreepic.png",
       "description": "Explore and share global perspectives on a dynamic blogging platform designed for insightful content and diverse viewpoints.",
       "link": "https://exploreepic.netlify.app/",
       "techStack": ["JavaScript","React.js", "CSS", "Express.js", "MongoDB"],

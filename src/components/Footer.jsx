@@ -1,23 +1,26 @@
 "use client";
-import React, { createElement } from "react";
+import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center justify-between">
+    <div className="flex flex-col items-center justify-between  text-white">
       <p className="text-xs">Paksh Gupta &#64; 2024</p>
       <div className="relative group ">
-        
-          <img
-            src="./images/plogo.png"
-            alt="Logo"
-            className="w-20 cursor-pointer transition-transform duration-300 transform group-hover:scale-110"
-          />
-       <Link href="#">
-        <div className="w-20 absolute top-1/2 left-full ml-4 transform -translate-y-1/2 bg-slate-700 text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          To Top
-        </div>
+        <Image
+          src="/images/plogo.png" // Ensure the path is correct
+          alt="Logo"
+          width={80} // Set appropriate width
+          height={80} // Set appropriate height
+          className="cursor-pointer transition-transform duration-300 transform group-hover:scale-110"
+        />
+        <Link href="#">
+          <div className="w-20 absolute top-1/2 left-full ml-4 transform -translate-y-1/2 bg-slate-700 text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            To Top
+          </div>
         </Link>
       </div>
       <div className="flex space-x-7 mb-4">

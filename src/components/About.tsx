@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { Button } from "@/components/ui/moving-border";
@@ -22,7 +23,7 @@ const About = () => {
       <Button
         onClick={handleOpenModal}
         borderRadius="1.75rem"
-        className=" dark:bg-slate-900 text-white dark:text-white border-neutral-200 dark:border-slate-800 "
+        className="dark:bg-slate-900 text-white dark:text-white border-neutral-200 dark:border-slate-800"
       >
         About Me
       </Button>
@@ -38,12 +39,14 @@ const About = () => {
               &times;
             </button>
 
-            <div className=" w-1/3  flex justify-center items-center">
-              {/* Dummy Image */}
-              <img
-                src="./images/developer.png"
-                alt="Dummy"
-                className=" w-full h-4/5 object-cover rounded-full"
+            <div className="w-1/3 flex justify-center items-center">
+              {/* Image */}
+              <Image
+                src="/images/developer.png"
+                alt="Developer"
+                width={600} 
+                height={200} 
+                className="rounded-full object-cover"
               />
             </div>
 
@@ -51,7 +54,7 @@ const About = () => {
               <div className="mb-6">
                 <h3 className="text-2xl font-bold">About Me</h3>
                 <p className="text-gray-300 mt-2">
-                  Hi, I'm Paksh Gupta, a dedicated Full Stack Developer, with a
+                  Hi, I&apos;m Paksh Gupta, a dedicated Full Stack Developer, with a
                   passion for building efficient, full stack web applications
                   using technologies like React.js, Node.js, and MongoDB. With a
                   background in software development and a B.Tech degree in CSE
@@ -65,47 +68,90 @@ const About = () => {
               <h3 className="text-2xl font-bold">Skills</h3>
               <div className="mt-4 mb-6">
                 <div className="flex flex-wrap gap-3">
-                  <img
-                    src="./images/JavaScript.png"
+                  <Image
+                    src="/images/JavaScript.png"
                     alt="JavaScript"
-                    className="w-12"
+                    width={48}
+                    height={48}
+                    className="object-contain"
                   />
-                  <img src="./images/HTML5.png" alt="HTML5" className="w-12" />
-                  <img src="./images/CSS3.png" alt="CSS3" className="w-12" />
-                  <img src="./images/C++ (CPlusPlus).png" alt="C++" className="w-12" />
-
-                  <img
-                    src="./images/React.png"
+                  <Image
+                    src="/images/HTML5.png"
+                    alt="HTML5"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                  <Image
+                    src="/images/CSS3.png"
+                    alt="CSS3"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                  <Image
+                    src="/images/C++ (CPlusPlus).png"
+                    alt="C++"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                  <Image
+                    src="/images/React.png"
                     alt="React"
-                    className="w-12 bg-white "
+                    width={48}
+                    height={48}
+                    className="object-contain"
                   />
-                  <img
-                    src="./images/express.png"
+                  <Image
+                    src="/images/express.png"
                     alt="Express"
-                    className="w-12"
+                    width={48}
+                    height={48}
+                    className="object-contain"
                   />
-                  <img
-                    src="./images/Node.js.png"
+                  <Image
+                    src="/images/Node.js.png"
                     alt="Node.js"
-                    className="w-12"
+                    width={48}
+                    height={48}
+                    className="object-contain"
                   />
-                  <img src="./images/Redux.png" alt="Redux" className="w-12" />
-                  <img
-                    src="./images/TypeScript.png"
+                  <Image
+                    src="/images/Redux.png"
+                    alt="Redux"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                  <Image
+                    src="/images/TypeScript.png"
                     alt="TypeScript"
-                    className="w-12"
+                    width={48}
+                    height={48}
+                    className="object-contain"
                   />
-                  <img
-                    src="./images/Postman.png"
+                  <Image
+                    src="/images/Postman.png"
                     alt="Postman"
-                    className="w-12"
+                    width={48}
+                    height={48}
+                    className="object-contain"
                   />
-                  <img
-                    src="./images/MongoDB.png"
+                  <Image
+                    src="/images/MongoDB.png"
                     alt="MongoDB"
-                    className="w-12"
+                    width={48}
+                    height={48}
+                    className="object-contain"
                   />
-                  <img src="./images/MySQL.png" alt="MySQL" className="w-12" />
+                  <Image
+                    src="/images/MySQL.png"
+                    alt="MySQL"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
                 </div>
               </div>
 
@@ -125,7 +171,7 @@ const About = () => {
                     <FaInstagram className="text-2xl text-pink-600 hover:text-pink-700" />
                   </Link>
                 </div>
-                <div className="">
+                <div>
                   <Link
                     href={
                       "https://drive.google.com/file/d/1L3dnEKT733kJX8JRqod35Z5lrjuI0T85/view?usp=sharing"
@@ -133,7 +179,7 @@ const About = () => {
                   >
                     <Button
                       borderRadius="1.75rem"
-                      className=" dark:bg-slate-900 text-white dark:text-white border-neutral-200 dark:border-slate-800"
+                      className="dark:bg-slate-900 text-white dark:text-white border-neutral-200 dark:border-slate-800"
                     >
                       Resume
                     </Button>
