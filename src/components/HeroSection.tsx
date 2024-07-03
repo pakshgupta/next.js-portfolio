@@ -2,16 +2,16 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Spotlight } from "@/components/ui/Spotlight";
-import { Button } from "@/components/ui/moving-border";
 import About from "@/components/About";
 
 const HeroSection = () => {
   return (
     <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
+      {/* Spotlight Component for additional design */}
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
 
+      {/* Image Section */}
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
           className="absolute left-0 hidden h-full transform -translate-x-1/2 lg:block"
@@ -33,20 +33,19 @@ const HeroSection = () => {
           alt="Your image description"
           width={800} // Set the width according to your design
           height={600} // Set the height according to your design
-          // layout="responsive" // Optional: Helps to maintain the aspect ratio
         />
       </div>
 
+      {/* Text Section */}
       <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
         <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
           <p className="inline-block px-3 py-px mb-4 text-2xl font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
             Hello!
           </p>
           <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-navy-blue sm:text-4xl sm:leading-none">
-            I&apos;m
-            <br className="hidden md:block" />
-            Paksh Gupta
+            I'm <br className="md:hidden" /> Paksh Gupta
           </h2>
+          {/* For all screens, "I'm" and "Paksh Gupta" will be on separate lines */}
           <p className="pr-5 mb-5 text-base text-gray-200 md:text-lg">
             A Full Stack Web Developer Transforming Your Vision into
             Interactive Web Solutions.

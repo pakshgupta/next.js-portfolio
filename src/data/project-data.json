@@ -2,6 +2,7 @@
   "projects": [
     {
       "id": 1,
+      "name":"Smart Nav Plus",
       "title": "https://smartNavPlus.com",
       "image": "/images/smartnav.png",
       "description":"SmartNavPlus is a travel platform that offers personalized trip planning with real-time safety alerts",
@@ -11,6 +12,7 @@
     },
     {
       "id": 2,
+      "name":"Nexa Shop",
       "title": "https://nexaShop.com",
       "image": "/images/nexashop.png",
       "description": "Nexashop is an e-commerce platform for shoes offering tailored recommendations and secure, speedy shopping.",
@@ -21,6 +23,7 @@
     },
     {
       "id": 3,
+      "name":"Explore Epic",
       "title": "https://exploreEpic.com",
       "image": "/images/exploreepic.png",
       "description": "Explore and share global perspectives on a dynamic blogging platform designed for insightful content and diverse viewpoints.",

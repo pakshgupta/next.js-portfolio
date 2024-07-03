@@ -4,13 +4,14 @@ import { PinContainer } from './ui/3d-pin';
 import Image from 'next/image';
 
 interface ProjectCardProps {
+  name:string;
   title: string;
   image: string; // Ensure the path is relative to the `public` folder
   description: string;
   link: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, image, description, link }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ name,title, image, description, link }) => {
   return (
     <div className="h-[25rem] w-full flex items-center justify-center ">
       <PinContainer
@@ -19,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, image, description, li
       >
         <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
-            {title}
+            {name}
           </h3>
           <div className="text-base !m-0 !p-0 font-normal">
             <span className="text-slate-300 ">
