@@ -43,7 +43,7 @@ const HeroSection = () => {
             Hello!
           </p>
           <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-navy-blue sm:text-4xl sm:leading-none">
-            I'm <br className="md:hidden" /> Paksh Gupta
+            I &apos;m <br className="md:hidden" /> Paksh Gupta
           </h2>
           {/* For all screens, "I'm" and "Paksh Gupta" will be on separate lines */}
           <p className="pr-5 mb-5 text-base text-gray-200 md:text-lg">
