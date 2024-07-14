@@ -181,7 +181,7 @@ const About = () => {
                   {/* Resume link */}
                   <Link
                     href={
-                      "https://drive.google.com/file/d/1L3dnEKT733kJX8JRqod35Z5lrjuI0T85/view?usp=sharing"
+                      "https://drive.google.com/file/d/1ingoYwLMgL1rUI55D6cSTChWDlpYy7Oy/view?usp=sharing"
                     }
                   >
                     <Button
